@@ -1,0 +1,18 @@
+{
+	"data": {
+		"isNewAssessmentNeeded": false,
+		"riskToleranceInfo": {
+			"riskToleranceLevel": "1a",
+			"riskToleranceForDisplay": "1a",
+			"maxProduRisk": "5",
+			"version": "1",
+			"answerData": null,
+			"vcFinalRes": "1",
+			"questionnaireId": null,
+			"confirmTime": null,
+			"tenor": "1",
+			"custInvObj": "1"
+		}
+	},
+	"result": null
+}

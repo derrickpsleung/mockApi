@@ -9,8 +9,9 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -20,35 +21,55 @@ public class MockApiController {
 	private static final Map<String, String> pathJsonMap = new LinkedHashMap<String, String>() {
 		private static final long serialVersionUID = 1L;
 		{
-			put("key1", "json/login.json");
-			put("key2", "json/login.json");
+			put("/unitTrust/securitiesAccounts", "json/securityAccResp.json");
+			put("/unitTrust/utmip/orderStatus/mip", "json/orderStatusResp.json");
+			put("/unitTrust/utmip/orderStatus/mip/contributionHistory", "json/orderStatusHistoryResp.json");
+			put("/unitTrust/utmip​/enquiry​/riskAssessmentInfo", "json/riskAssInfoResp.json");
+			put("/unitTrust/utmip/subscription/init", "json/subInit.json");
+			put("/unitTrust/utmip/subscription/validation", "json/subValidation.json");
+			put("/unitTrust/utmip/subscription/complete", "json/subComplete.json");
 		}
 	};
 
-	@GetMapping("/{p1}/{p2}")
+	@RequestMapping(value = "/{p1}/{p2}", method = { RequestMethod.GET, RequestMethod.POST })
 	@ResponseBody
 	public String twoPath(@PathVariable String p1, @PathVariable String p2) throws IOException {
 
-		List<String> list = Arrays.asList(p1, p2);
-		String key = String.join(",", list);
-		return readAllBytesJava7(pathJsonMap.get(key));
+		return readAllBytesJava7(p1, p2);
 
 	}
 
-	@GetMapping("/{p1}/{p2}/{p3}")
+	@RequestMapping(value = "/{p1}/{p2}/{p3}", method = { RequestMethod.GET, RequestMethod.POST })
 	@ResponseBody
 	public String threePath(@PathVariable String p1, @PathVariable String p2, @PathVariable String p3)
 			throws IOException {
 
-		List<String> list = Arrays.asList(p1, p2, p3);
-		String key = String.join(",", list);
-		return readAllBytesJava7(pathJsonMap.get(key));
+		return readAllBytesJava7(p1, p2, p3);
 	}
 
-	private String readAllBytesJava7(String classPath) throws IOException {
+	@RequestMapping(value = "/{p1}/{p2}/{p3}/{p4}", method = { RequestMethod.GET, RequestMethod.POST })
+	@ResponseBody
+	public String fourPath(@PathVariable String p1, @PathVariable String p2, @PathVariable String p3,
+			@PathVariable String p4) throws IOException {
+
+		return readAllBytesJava7(p1, p2, p3, p4);
+	}
+
+	@RequestMapping(value = "/{p1}/{p2}/{p3}/{p4}/{p5}", method = { RequestMethod.GET, RequestMethod.POST })
+	@ResponseBody
+	public String fivePath(@PathVariable String p1, @PathVariable String p2, @PathVariable String p3,
+			@PathVariable String p4, @PathVariable String p5) throws IOException {
+
+		return readAllBytesJava7(p1, p2, p3, p4, p5);
+	}
+
+	private String readAllBytesJava7(String... args) throws IOException {
+
+		List<String> list = Arrays.asList(args);
+		String key = "/" + String.join("/", list);
 
 		ClassLoader classLoader = MockApiController.class.getClassLoader();
-		InputStream inputStream = classLoader.getResourceAsStream(classPath);
+		InputStream inputStream = classLoader.getResourceAsStream(pathJsonMap.get(key));
 		String data = readFromInputStream(inputStream);
 
 		return data;

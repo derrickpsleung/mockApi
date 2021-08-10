@@ -1,0 +1,16 @@
+{
+	"result": null,
+	"data": {
+		"isShowBasket": null,
+		"isJointAcc": false,
+		"securitiesAccounts": [
+			{
+				"securitiesAccId": "F90z5r+lS0lSKOC6oZmOctr1fyl0Wq/hSkaM5j0n5QJcFIuhWNosOm6da+Q5xpGW+qPzH2WNO2TDwTKGeG+qpLoivyYla0lP/R/VZ6Pxmu7Wv1Bg4T+dKw9kuz9Q8F9H",
+				"fmtSecuritiesAcc": "015-514-33-***29-1"
+			}
+		],
+		"isFlagSettlIsRelated": false,
+		"isOTPAuthenticated": true,
+		"isEnableSecuritiesTradeIndicator": true
+	}
+}
