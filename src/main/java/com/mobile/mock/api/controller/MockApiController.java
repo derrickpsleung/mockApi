@@ -26,10 +26,12 @@ public class MockApiController {
 			put("/unitTrust/securitiesAccounts", "json/securityAccResp.json");
 			put("/unitTrust/utmip/orderStatus/mip", "json/orderStatusResp.json");
 			put("/unitTrust/utmip/orderStatus/mip/contributionHistory", "json/orderStatusHistoryResp.json");
-			put("/unitTrust/utmip​/enquiry​/riskAssessmentInfo", "json/riskAssInfoResp.json");
+			put("/unitTrust/utmip/enquiry/riskAssessmentInfo", "json/riskAssInfoResp.json");
 			put("/unitTrust/utmip/subscription/init", "json/subInit.json");
 			put("/unitTrust/utmip/subscription/validation", "json/subValidation.json");
 			put("/unitTrust/utmip/subscription/complete", "json/subComplete.json");
+			put("/security/otp/initialization", "json/otpInit.json");
+			put("/security/otp/validation", "json/otpValidation.json");
 		}
 	};
 
@@ -69,6 +71,8 @@ public class MockApiController {
 
 		List<String> list = Arrays.asList(args);
 		String key = "/" + String.join("/", list);
+
+		System.out.println("readAllBytesJava7 key: " + key);
 
 		ClassLoader classLoader = MockApiController.class.getClassLoader();
 		InputStream inputStream = classLoader.getResourceAsStream(pathJsonMap.get(key));
