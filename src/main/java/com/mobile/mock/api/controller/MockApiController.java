@@ -24,14 +24,23 @@ public class MockApiController {
 		private static final long serialVersionUID = 1L;
 		{
 			put("/unitTrust/securitiesAccounts", "json/securityAccResp.json");
-			put("/unitTrust/utmip/orderStatus/mip", "json/orderStatusResp.json");
-			put("/unitTrust/utmip/orderStatus/mip/contributionHistory", "json/orderStatusHistoryResp.json");
 			put("/unitTrust/utmip/enquiry/riskAssessmentInfo", "json/riskAssInfoResp.json");
 			put("/unitTrust/utmip/subscription/init", "json/subInit.json");
 			put("/unitTrust/utmip/subscription/validation", "json/subValidation.json");
 			put("/unitTrust/utmip/subscription/complete", "json/subComplete.json");
+			
 			put("/security/otp/initialization", "json/otpInit.json");
 			put("/security/otp/validation", "json/otpValidation.json");
+			
+			put("/settings/getAccessControl", "json/otpValidation.json");
+			
+			put("/unitTrust/orderStatus/subscription", "json/utOrderStatusSubscription.json");
+			put("/unitTrust/orderStatus/redemption", "json/utOrderStatusRedemption.json");
+			put("/unitTrust/orderStatus/switch", "json/utOrderStatusSwitch.json");
+			put("/unitTrust/utmip/orderStatus/mip", "json/orderStatusResp.json");
+			put("/unitTrust/utmip/orderStatus/mip/contributionHistory", "json/orderStatusHistoryResp.json");
+
+			
 		}
 	};
 

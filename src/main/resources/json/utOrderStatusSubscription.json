@@ -1,0 +1,16 @@
+{
+	"data": {
+		"asOfDateTime": "2021-09-28T09:30:29.477+08:00",
+		"orders": [
+			{
+				"amount": 2000,
+				"ccy": "HKD",
+				"date": "2021-09-28T09:30:29.477+08:00",
+				"fundName": "Derrick fund",
+				"refNo": "DEK3334590",
+				"statusCode": "000"
+			}
+		]
+	},
+	"result": null
+}

@@ -1,6 +1,127 @@
 {
+	"result": null,
 	"data": {
-		
-	},
-	"result": null
+		"applicationFormBean": {
+			"custName": "Chan Tai Man",
+			"hkid": "A1234567",
+			"securitiesAcct": "015-514-33-03525-9",
+			"settlementAcct": "015-514-33-03525-9",
+			"monthlyInvAmt": 0,
+			"discountRate": 4.25,
+			"mipInfo": {
+				"mipCode": "GP200",
+				"mipIvsCcy": "HKD",
+				"mipMinInvAmt": 1000000,
+				"mipInvAmtMultiple": 10000,
+				"netSubFee": 4.25
+			},
+			"fundInfo": {
+				"fundHouse": "BEA Union Inversment Management Limited",
+				"fundName": "BEA Union inverstment Asia Pacific Multi Income Fund - A/dis/RMB Hedaged",
+				"originalRate": 5,
+				"beaRiskLevel": "2",
+				"fundCode": "GP200",
+				"isHighYield": false,
+				"isRmbFund": false,
+				"isRqfii": false,
+				"isFdi": false,
+				"prdInvObj": "2",
+				"prdTenor": "2"
+			},
+			"currentTime": "2021-07-16T12:01:17.146+08:00"
+		},
+		"riskToleranceInfo": {
+			"riskToleranceLevel": "1a",
+			"riskToleranceForDisplay": "1a",
+			"maxProduRisk": "5",
+			"version": "1",
+			"answerData": null,
+			"vcFinalRes": "1",
+			"questionnaireId": null,
+			"confirmTime": null,
+			"tenor": "1",
+			"custInvObj": "1"
+		},
+		"settlementAccounts": [
+			{
+				"ccy": "HKD",
+				"currBal": 11148369443.78,
+				"signOfCurrBal": "+",
+				"availBal": 11122502223.78,
+				"signOfAvailBal": null
+			},
+			{
+				"ccy": "USD",
+				"currBal": 20952203.73,
+				"signOfCurrBal": "+",
+				"availBal": 19785203.73,
+				"signOfAvailBal": null
+			},
+			{
+				"ccy": "EUR",
+				"currBal": 42364133.54,
+				"signOfCurrBal": "+",
+				"availBal": 42364133.54,
+				"signOfAvailBal": null
+			},
+			{
+				"ccy": "AUD",
+				"currBal": 16188473.04,
+				"signOfCurrBal": "+",
+				"availBal": 15442473.04,
+				"signOfAvailBal": null
+			},
+			{
+				"ccy": "CAD",
+				"currBal": 1574299.92,
+				"signOfCurrBal": "+",
+				"availBal": 1354299.92,
+				"signOfAvailBal": null
+			},
+			{
+				"ccy": "CHF",
+				"currBal": 4894629.08,
+				"signOfCurrBal": "+",
+				"availBal": 4894629.08,
+				"signOfAvailBal": null
+			},
+			{
+				"ccy": "CNY",
+				"currBal": 5589528596.69,
+				"signOfCurrBal": "+",
+				"availBal": 5588877596.69,
+				"signOfAvailBal": null
+			},
+			{
+				"ccy": "GBP",
+				"currBal": 6163732.07,
+				"signOfCurrBal": "+",
+				"availBal": 6163732.07,
+				"signOfAvailBal": null
+			},
+			{
+				"ccy": "JPY",
+				"currBal": 1904598972,
+				"signOfCurrBal": "+",
+				"availBal": 1904598972,
+				"signOfAvailBal": null
+			},
+			{
+				"ccy": "NZD",
+				"currBal": 28120577.39,
+				"signOfCurrBal": "+",
+				"availBal": 28120577.39,
+				"signOfAvailBal": null
+			},
+			{
+				"ccy": "SGD",
+				"currBal": 5847936.58,
+				"signOfCurrBal": "+",
+				"availBal": 5847936.58,
+				"signOfAvailBal": null
+			}
+		],
+		"fmtSettleAccount": "015-514-33-03525-9",
+		"settleAccountType": "ACT94L"
+	}
 }

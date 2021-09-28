@@ -1,6 +1,37 @@
 {
+	"result": null,
 	"data": {
-		
-	},
-	"result": null
+		"txnDateTime": "2021-07-16T12:01:17.146+08:00",
+		"txnInstRefCode": "TEST1234567890",
+		"appRefCode": "App123456789",
+		"applicationFormBean": {
+			"custName": "Chan Tai Man",
+			"hkid": "A1234567",
+			"securitiesAcct": "015-514-33-03525-9",
+			"settlementAcct": "015-514-33-03525-9",
+			"monthlyInvAmt": 10000,
+			"discountRate": 4.25,
+			"mipInfo": {
+				"mipCode": "GP200",
+				"mipIvsCcy": "HKD",
+				"mipMinInvAmt": 1000000,
+				"mipInvAmtMultiple": 10000,
+				"netSubFee": 4.25
+			},
+			"fundInfo": {
+				"fundHouse": "BEA Union Inversment Management Limited",
+				"fundName": "BEA Union inverstment Asia Pacific Multi Income Fund - A/dis/RMB Hedaged",
+				"originalRate": 5,
+				"beaRiskLevel": "2",
+				"fundCode": "GP200",
+				"isHighYield": false,
+				"isRmbFund": false,
+				"isRqfii": false,
+				"isFdi": false,
+				"prdInvObj": "2",
+				"prdTenor": "2"
+			},
+			"currentTime": "2021-07-16T12:01:17.146+08:00"
+		}
+	}
 }

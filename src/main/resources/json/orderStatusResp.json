@@ -1,6 +1,38 @@
 {
+	"result": null,
 	"data": {
-		
-	},
-	"result": null
+		"asOfDateTime": "2021-07-16T12:01:17.146+08:00",
+		"applicationList": [
+			{
+				"txnInstRefCode": "TMIP0000001",
+				"fundName": "BEA Union inverstment Asia Pacific Multi Income Fund - A/dis/RMB Hedaged",
+				"applicationDate": "2021-07-16T12:01:17.146+08:00",
+				"mipCurrency": "HKD",
+				"mipAmount": 3000,
+				"appStatus": "A",
+				"appRefCode": "12345678",
+				"schemeCode": "PG200"
+			},
+			{
+				"txnInstRefCode": "TMIP0000002",
+				"fundName": "BEA Union inverstment Asia Pacific Multi Income Fund - A/dis/RMB Hedaged",
+				"applicationDate": "2021-07-16T12:01:17.146+08:00",
+				"mipCurrency": "HKD",
+				"mipAmount": 1000,
+				"appStatus": "I",
+				"appRefCode": "8765421",
+				"schemeCode": "PG200"
+			},
+			{
+				"txnInstRefCode": "TMIP0000003",
+				"fundName": "BEA Union inverstment Asia Pacific Multi Income Fund - A/dis/RMB Hedaged",
+				"applicationDate": "2021-07-16T12:01:17.146+08:00",
+				"mipCurrency": "HKD",
+				"mipAmount": 2000,
+				"appStatus": "R",
+				"appRefCode": "1111111",
+				"schemeCode": "PG200"
+			}
+		]
+	}
 }

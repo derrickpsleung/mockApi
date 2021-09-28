@@ -1,6 +1,39 @@
 {
+	"result": null,
 	"data": {
-		
-	},
-	"result": null
+		"applicationDateTime": "2021-07-16T12:01:17.146+08:00",
+		"fundName": "BEA Union inverstment Asia Pacific Multi Income Fund - A/dis/RMB Hedaged",
+		"schemeCode": "GP200",
+		"productRiskLevel": "3",
+		"installHistoryList": [
+			{
+				"debitAmount": 1000,
+				"debitStatus": "SUCCESSFUL",
+				"debitDate": "2021-07-16T12:01:17.146+08:00",
+				"settlementType": "BNK",
+				"debitCurrency": "HKD"
+			},
+			{
+				"debitAmount": 1000,
+				"debitStatus": "SUCCESSFUL",
+				"debitDate": "2021-07-16T12:01:17.146+08:00",
+				"settlementType": "BNK",
+				"debitCurrency": "HKD"
+			},
+			{
+				"debitAmount": 1000,
+				"debitStatus": "SUCCESSFUL",
+				"debitDate": "2021-07-16T12:01:17.146+08:00",
+				"settlementType": "BNK",
+				"debitCurrency": "HKD"
+			},
+			{
+				"debitAmount": 1000,
+				"debitStatus": "FAILED",
+				"debitDate": "2021-07-16T12:01:17.146+08:00",
+				"settlementType": "CRD",
+				"debitCurrency": "HKD"
+			}
+		]
+	}
 }
