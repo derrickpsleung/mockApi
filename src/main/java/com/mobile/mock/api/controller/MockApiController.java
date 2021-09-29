@@ -40,6 +40,8 @@ public class MockApiController {
 			put("/unitTrust/utmip/orderStatus/mip", "json/orderStatusResp.json");
 			put("/unitTrust/utmip/orderStatus/mip/contributionHistory", "json/orderStatusHistoryResp.json");
 
+			put("/iao/getCustomerWarningFlags", "json/iaoGetCustomerWarningFlags.json");
+
 			
 		}
 	};
