@@ -11,7 +11,7 @@
 			"mipInfo": {
 				"mipCode": "GP200",
 				"mipIvsCcy": "HKD",
-				"mipMinInvAmt": 1000000,
+				"mipMinInvAmt": 100,
 				"mipInvAmtMultiple": 10000,
 				"netSubFee": 4.25
 			},
